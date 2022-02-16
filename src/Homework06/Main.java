@@ -9,7 +9,7 @@ public class Main {
      * @param number - входное число
      * @return возвращает индекс входного числа в массиве.
      */
-    public static int getIngexFromNumber(int[] array,int number){
+    public static int getIngexFromNumber(int[] array, int number){
         int index = 0;
         for (int i = 0; i < array.length; i++) {
             if(array[i] == number)
