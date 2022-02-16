@@ -15,7 +15,7 @@ public class MinNumberOfTime {
         int number = Integer.parseInt(scanner.nextLine());
         while (number != -1) {
             if(number >= -100 && number <= 100) {
-                array[number+100]++;
+                array[number + 100]++;
             } else {
                 System.out.println("Number is out of range. Please re-enter the number");
             }
@@ -23,7 +23,7 @@ public class MinNumberOfTime {
         }
         int result = 999;
         int tempValue = 100;
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             if(array[i] < tempValue && array[i] != 0) {
                 tempValue = array[i];
                 result = i-100;
