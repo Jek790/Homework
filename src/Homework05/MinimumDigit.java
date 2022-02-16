@@ -8,20 +8,20 @@ import java.util.Scanner;
 public class MinimumDigit {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Simple input 1;");
+        System.out.println("Вводите числа. Для начала поиска минимальной цифры введите -1");
         int number = Integer.parseInt(scanner.nextLine());
         int remainder;
         int result = 9;
-        while(number>-1){
-            while (number>0){
-                remainder = number%10;
-                if(remainder<result){
+        while(number != -1) {
+            while (number >0) {
+                remainder = number % 10;
+                if(remainder < result) {
                     result = remainder;
                 }
                 number /= 10;
             }
             number = Integer.parseInt(scanner.nextLine());
         }
-        System.out.println("Simple output 1: " +result);
+        System.out.println("Самая маленькая цифра: " +result);
     }
 }
