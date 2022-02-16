@@ -6,11 +6,11 @@ public class Main2 {
      * процедура принимающая на вход массив из целых чисел, и выводящая в консоль значимые числа влево, а нули вправо.
      * @param array - входящий массив целых чисел.
      */
-    public  static void autoSorting(int[] array){
+    public  static void autoSorting(int[] array) {
         int[] outputArray = new int[array.length];
         int indexOutputArray = 0;
         for (int i = indexOutputArray; i < array.length; i++) {
-            if(array[i] != 0){
+            if(array[i] != 0) {
                 outputArray[indexOutputArray] = array[i];
                 indexOutputArray++;
             }
