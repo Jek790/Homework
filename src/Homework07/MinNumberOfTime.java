@@ -21,12 +21,12 @@ public class MinNumberOfTime {
             }
             number = Integer.parseInt(scanner.nextLine());
         }
-        int result = 999;
-        int tempValue = 100;
+        int result = -1;
+        int tempValue = Integer.MAX_VALUE;
         for (int i = 0; i < array.length; i++) {
             if(array[i] < tempValue && array[i] != 0) {
                 tempValue = array[i];
-                result = i-100;
+                result = i - 100;
             }
         }
         System.out.println("The number that is entered the least number of times is " + result);
