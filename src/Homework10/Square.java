@@ -1,15 +1,30 @@
 package Homework10;
 
-public class Square extends Figure implements Movable{
+public class Square extends Rectangle implements Movable {
 
-    protected static final int REFPOINTX = 50;
-    protected static final int REFPOINTY = 100;
+    private int side;
 
-    public Square(int coordinateX, int coordinateY){
-        super(coordinateX, coordinateY);
+    public Square (int side, int coordinateX, int coordinateY) {
+        super(side, side, coordinateX, coordinateY);
     }
-     public void move(){
-        coordinateX = REFPOINTX;
-        coordinateY = REFPOINTY;
-     }
+
+    public Square (int side) {
+        super(side, side);
+        this.side = side;
+    }
+
+    @Override
+    public double getPerimeter() {
+        return side*4;
+    }
+    public String toString (){
+        return coordinateX + " " + coordinateY;
+
+    }
+
+    @Override
+    public void move(int coordinateX, int coordinateY) {
+        this.coordinateX = coordinateX;
+        this.coordinateY = coordinateY;
+    }
 }

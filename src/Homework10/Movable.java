@@ -1,5 +1,5 @@
 package Homework10;
 
 public interface Movable {
-        void move();
+       void move(int coordinateX, int coordinateY);
 }

@@ -1,7 +1,6 @@
 package Homework10;
 
 public abstract class Figure {
-
     protected int coordinateX;
     protected int coordinateY;
 
@@ -9,15 +8,9 @@ public abstract class Figure {
         this.coordinateX = coordinateX;
         this.coordinateY = coordinateY;
     }
-
-    public int getCoordinateX() {
-        return coordinateX;
+    public Figure() {
+        coordinateX = 0;
+        coordinateY = 0;
     }
-
-    public int getCoordinateY() {
-        return coordinateY;
-    }
-
-
-    public abstract void move();
+    public abstract double getPerimeter();
 }
